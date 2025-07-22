@@ -1,0 +1,5 @@
+{
+  "javascript.autoClosingTags": true,
+  "javascript.validate.enable": false,
+  "javascript.suggest.autoImports": true
+}

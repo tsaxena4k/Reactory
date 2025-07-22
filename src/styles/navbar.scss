@@ -1,0 +1,31 @@
+#global-navbar {
+  background-color: var(--navbar-bg);
+  .dropdown-menu {
+    background-color: var(--navbar-bg);
+    .dropdown-item {
+      &:hover {
+        background-color: var(--bg-color-primary);
+      }
+    }
+  }
+  a,
+  .nav-link,
+  .navbar-brand,
+  .dropdown-item {
+    color: var(--navbar-text);
+    transition: color 0.2s;
+  }
+  .nav-link.active,
+  .nav-link.show {
+    color: var(--navbar-text);
+  }
+}
+
+.dark-theme {
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  .navbar-toggler {
+    border-color: grey;
+  }
+}
